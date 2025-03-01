@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
             RotatePlayer();
             RespondtoBoost();
         }
-        
     }
 
     public void DisableControls()
@@ -47,11 +46,11 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            rb2d.AddTorque(torqueAmount);
+            rb2d.AddTorque(torqueAmount * Time.deltaTime);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            rb2d.AddTorque(-torqueAmount);
+            rb2d.AddTorque(-torqueAmount * Time.deltaTime);
         }
     }
 }
