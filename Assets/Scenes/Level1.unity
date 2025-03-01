@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -322,6 +322,25 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
@@ -584,8 +603,6 @@ MonoBehaviour:
       rightTangent: {x: -0.53609467, y: 0.00047683716, z: 0}
       mode: 1
       height: 2.81
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -594,8 +611,6 @@ MonoBehaviour:
       rightTangent: {x: 0.12351227, y: -0.00013017654, z: 0}
       mode: 1
       height: 3.29
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -604,8 +619,6 @@ MonoBehaviour:
       rightTangent: {x: 0.9160614, y: 1.2529521, z: 0}
       mode: 1
       height: 2.45
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -614,8 +627,6 @@ MonoBehaviour:
       rightTangent: {x: 1.7817993, y: -1.1350553, z: 0}
       mode: 1
       height: 3.29
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -624,8 +635,6 @@ MonoBehaviour:
       rightTangent: {x: 1.2343521, y: 0.41565633, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -634,8 +643,6 @@ MonoBehaviour:
       rightTangent: {x: 9.502201, y: 0.32978392, z: 0}
       mode: 1
       height: 2.74
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -644,8 +651,6 @@ MonoBehaviour:
       rightTangent: {x: 1.599144, y: -0.98740244, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -654,8 +659,6 @@ MonoBehaviour:
       rightTangent: {x: 3.326048, y: -0.4731492, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -664,8 +667,6 @@ MonoBehaviour:
       rightTangent: {x: 2.0876045, y: 1.5611172, z: 0}
       mode: 1
       height: 2.1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -674,8 +675,6 @@ MonoBehaviour:
       rightTangent: {x: 2.193057, y: -0.022613525, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -684,8 +683,6 @@ MonoBehaviour:
       rightTangent: {x: 4.08282, y: 0.8621564, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -694,8 +691,6 @@ MonoBehaviour:
       rightTangent: {x: 8.503822, y: 5.2031875, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -704,8 +699,6 @@ MonoBehaviour:
       rightTangent: {x: 15.981125, y: 1.8106422, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -714,8 +707,6 @@ MonoBehaviour:
       rightTangent: {x: 1.0005798, y: 0.0016925335, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -724,8 +715,6 @@ MonoBehaviour:
       rightTangent: {x: -0.24403381, y: -0.00018763542, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -734,8 +723,6 @@ MonoBehaviour:
       rightTangent: {x: -50.8321, y: -2.53154, z: 0}
       mode: 1
       height: 1
-      bevelCutoff: 0
-      bevelSize: 0
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
@@ -750,11 +737,244 @@ MonoBehaviour:
   m_ColliderDetail: 16
   m_ColliderOffset: 0.36
   m_UpdateCollider: 1
-  m_OptimizeCollider: 1
-  m_OptimizeGeometry: 1
   m_EnableTangents: 0
   m_GeometryCached: 0
   m_UTess2D: 0
+  m_Creator: {fileID: 0}
+  m_Modifiers: []
+  m_ColliderSegment:
+  - {x: -92.87174, y: -13.02195}
+  - {x: -93.01837, y: -12.800251}
+  - {x: -94.21437, y: -11.457858}
+  - {x: -94.502396, y: -10.452481}
+  - {x: -94.83032, y: -9.190024}
+  - {x: -95.19018, y: -7.71944}
+  - {x: -95.569496, y: -6.0982122}
+  - {x: -95.95333, y: -4.385652}
+  - {x: -96.32522, y: -2.6414754}
+  - {x: -96.668076, y: -0.92529976}
+  - {x: -96.965485, y: 0.7037673}
+  - {x: -97.20246, y: 2.1883135}
+  - {x: -97.36569, y: 3.4765153}
+  - {x: -97.44137, y: 4.5404654}
+  - {x: -97.35635, y: 5.5396676}
+  - {x: -96.32482, y: 6.5728917}
+  - {x: -95.282555, y: 6.318692}
+  - {x: -94.29981, y: 5.549507}
+  - {x: -93.830864, y: 5.1873775}
+  - {x: -93.31167, y: 4.799885}
+  - {x: -92.75812, y: 4.409204}
+  - {x: -92.1866, y: 4.0392265}
+  - {x: -91.61496, y: 3.7146592}
+  - {x: -91.064674, y: 3.4592957}
+  - {x: -90.562836, y: 3.2927551}
+  - {x: -90.14194, y: 3.223995}
+  - {x: -89.82761, y: 3.2425838}
+  - {x: -89.60595, y: 3.328991}
+  - {x: -89.324104, y: 3.618113}
+  - {x: -88.99758, y: 3.928046}
+  - {x: -88.48986, y: 4.2404637}
+  - {x: -87.92197, y: 4.4876904}
+  - {x: -87.292755, y: 4.695632}
+  - {x: -86.60632, y: 4.8733807}
+  - {x: -85.871056, y: 5.02305}
+  - {x: -85.09739, y: 5.1431737}
+  - {x: -84.29712, y: 5.2300563}
+  - {x: -83.48248, y: 5.2785683}
+  - {x: -82.66608, y: 5.2827673}
+  - {x: -81.86017, y: 5.23631}
+  - {x: -81.07628, y: 5.1323843}
+  - {x: -80.324615, y: 4.9627695}
+  - {x: -79.61361, y: 4.7153716}
+  - {x: -79.02364, y: 4.4126034}
+  - {x: -78.38499, y: 4.0274663}
+  - {x: -77.76848, y: 3.6996813}
+  - {x: -77.43802, y: 3.5455678}
+  - {x: -77.09036, y: 3.4013484}
+  - {x: -76.724686, y: 3.270584}
+  - {x: -76.341064, y: 3.1574345}
+  - {x: -75.94053, y: 3.0664206}
+  - {x: -75.52501, y: 3.0021713}
+  - {x: -75.09285, y: 2.9675362}
+  - {x: -74.661026, y: 2.9714327}
+  - {x: -74.2202, y: 3.0123286}
+  - {x: -73.77935, y: 3.0942602}
+  - {x: -73.3468, y: 3.217235}
+  - {x: -73.13095, y: 3.307943}
+  - {x: -72.925545, y: 3.4289696}
+  - {x: -72.72693, y: 3.5779176}
+  - {x: -72.53455, y: 3.7504234}
+  - {x: -72.1593, y: 4.1472487}
+  - {x: -71.76866, y: 4.580139}
+  - {x: -71.3182, y: 5.0062537}
+  - {x: -71.05602, y: 5.2012305}
+  - {x: -70.76291, y: 5.3738613}
+  - {x: -70.436485, y: 5.5145955}
+  - {x: -70.07783, y: 5.6125197}
+  - {x: -69.74766, y: 5.6531014}
+  - {x: -67.849396, y: 5.7982736}
+  - {x: -65.93797, y: 6.078326}
+  - {x: -63.968887, y: 6.466812}
+  - {x: -61.956482, y: 6.9332166}
+  - {x: -59.915787, y: 7.4469376}
+  - {x: -57.862324, y: 7.9775457}
+  - {x: -55.81161, y: 8.494711}
+  - {x: -53.77889, y: 8.967974}
+  - {x: -51.77858, y: 9.36635}
+  - {x: -49.823967, y: 9.657947}
+  - {x: -47.927055, y: 9.809575}
+  - {x: -46.09877, y: 9.786422}
+  - {x: -44.349766, y: 9.551956}
+  - {x: -42.691723, y: 9.068526}
+  - {x: -41.138428, y: 8.2992525}
+  - {x: -40.74106, y: 7.997667}
+  - {x: -40.30268, y: 7.5799317}
+  - {x: -39.813366, y: 7.064008}
+  - {x: -38.663788, y: 5.803003}
+  - {x: -38.001976, y: 5.0949497}
+  - {x: -37.236958, y: 4.317499}
+  - {x: -36.506973, y: 3.6211498}
+  - {x: -35.675938, y: 2.8950458}
+  - {x: -34.791004, y: 2.202602}
+  - {x: -33.853703, y: 1.5635269}
+  - {x: -32.865635, y: 0.99726826}
+  - {x: -31.828312, y: 0.5229008}
+  - {x: -30.742859, y: 0.15906014}
+  - {x: -29.610092, y: -0.07588935}
+  - {x: -28.974033, y: -0.1187053}
+  - {x: -28.302258, y: -0.074584216}
+  - {x: -27.59916, y: 0.05176276}
+  - {x: -26.871641, y: 0.25480354}
+  - {x: -26.126236, y: 0.5279456}
+  - {x: -25.36885, y: 0.86370605}
+  - {x: -24.604614, y: 1.2538884}
+  - {x: -23.837973, y: 1.6897593}
+  - {x: -23.07273, y: 2.162256}
+  - {x: -22.312263, y: 2.6622114}
+  - {x: -21.559748, y: 3.180595}
+  - {x: -20.818394, y: 3.708733}
+  - {x: -20.091673, y: 4.238485}
+  - {x: -19.383488, y: 4.762346}
+  - {x: -18.591997, y: 5.340072}
+  - {x: -17.807077, y: 5.5819783}
+  - {x: -17.548424, y: 5.554288}
+  - {x: -16.916006, y: 5.411455}
+  - {x: -16.074558, y: 4.9752183}
+  - {x: -15.196962, y: 4.3599105}
+  - {x: -14.238798, y: 3.5988815}
+  - {x: -13.182546, y: 2.723511}
+  - {x: -12.019679, y: 1.7680533}
+  - {x: -10.744366, y: 0.7689979}
+  - {x: -9.35125, y: -0.23547716}
+  - {x: -7.8348517, y: -1.2057331}
+  - {x: -6.189665, y: -2.1007712}
+  - {x: -4.410637, y: -2.878332}
+  - {x: -2.4938374, y: -3.4950562}
+  - {x: -0.43712115, y: -3.9067912}
+  - {x: 1.7485412, y: -4.0691795}
+  - {x: 2.1487317, y: -4.0163245}
+  - {x: 2.4958045, y: -3.9026227}
+  - {x: 2.8963773, y: -3.6948593}
+  - {x: 3.315182, y: -3.4141846}
+  - {x: 3.7481728, y: -3.0728278}
+  - {x: 4.1926947, y: -2.684502}
+  - {x: 4.6473384, y: -2.263329}
+  - {x: 5.5856705, y: -1.3788164}
+  - {x: 6.070304, y: -0.9433436}
+  - {x: 6.566861, y: -0.53083694}
+  - {x: 7.077396, y: -0.15525506}
+  - {x: 7.6047034, y: 0.16889478}
+  - {x: 8.15207, y: 0.42581603}
+  - {x: 8.730783, y: 0.59918857}
+  - {x: 9.808023, y: 0.6693464}
+  - {x: 11.215539, y: 0.545221}
+  - {x: 12.926329, y: 0.2809502}
+  - {x: 14.9189005, y: -0.076868504}
+  - {x: 17.16435, y: -0.48314703}
+  - {x: 19.63114, y: -0.89291763}
+  - {x: 22.286612, y: -1.2612003}
+  - {x: 25.097597, y: -1.5430397}
+  - {x: 28.03064, y: -1.6935616}
+  - {x: 31.05216, y: -1.6680305}
+  - {x: 34.12863, y: -1.4218961}
+  - {x: 37.226692, y: -0.9107965}
+  - {x: 40.313423, y: -0.09049292}
+  - {x: 43.356445, y: 1.0833288}
+  - {x: 46.342125, y: 2.6657734}
+  - {x: 48.097805, y: 3.623665}
+  - {x: 49.94728, y: 4.4202876}
+  - {x: 51.862183, y: 5.063207}
+  - {x: 53.83262, y: 5.570523}
+  - {x: 55.84902, y: 5.9603233}
+  - {x: 57.902054, y: 6.2506037}
+  - {x: 59.982475, y: 6.459218}
+  - {x: 62.113487, y: 6.605433}
+  - {x: 64.18881, y: 6.702262}
+  - {x: 66.61749, y: 6.780727}
+  - {x: 68.39428, y: 6.8299994}
+  - {x: 70.473404, y: 6.894156}
+  - {x: 72.52424, y: 6.981554}
+  - {x: 74.537254, y: 7.109359}
+  - {x: 76.51116, y: 7.2954745}
+  - {x: 79.53758, y: 7.5672708}
+  - {x: 82.22756, y: 7.6714816}
+  - {x: 84.59441, y: 7.6290627}
+  - {x: 86.65887, y: 7.461657}
+  - {x: 88.441536, y: 7.190825}
+  - {x: 89.96297, y: 6.8380733}
+  - {x: 91.2433, y: 6.4249053}
+  - {x: 92.30257, y: 5.972933}
+  - {x: 93.16037, y: 5.5039988}
+  - {x: 93.83619, y: 5.0403476}
+  - {x: 94.349335, y: 4.6047707}
+  - {x: 94.71907, y: 4.2208447}
+  - {x: 94.96414, y: 3.9139724}
+  - {x: 95.077545, y: 3.7278166}
+  - {x: 95.26979, y: 3.6316159}
+  - {x: 95.48113, y: 3.2683332}
+  - {x: 95.56842, y: 2.8507957}
+  - {x: 95.59654, y: 2.3704782}
+  - {x: 95.58269, y: 1.8291539}
+  - {x: 95.534546, y: 1.2406414}
+  - {x: 95.45779, y: 0.62318516}
+  - {x: 95.35771, y: -0.003339786}
+  - {x: 95.239265, y: -0.6184403}
+  - {x: 95.107346, y: -1.2015505}
+  - {x: 94.966415, y: -1.7326744}
+  - {x: 94.81988, y: -2.1935763}
+  - {x: 94.66687, y: -2.5721886}
+  - {x: 94.47547, y: -2.8822534}
+  - {x: 94.25608, y: -3.0371017}
+  - {x: 93.70711, y: -3.232406}
+  - {x: 92.31579, y: -3.735046}
+  - {x: 90.088455, y: -4.518219}
+  - {x: 87.07948, y: -5.535106}
+  - {x: 83.340744, y: -6.739791}
+  - {x: 78.92387, y: -8.086458}
+  - {x: 73.88032, y: -9.529316}
+  - {x: 68.261665, y: -11.022579}
+  - {x: 62.11933, y: -12.520458}
+  - {x: 55.504807, y: -13.97716}
+  - {x: 48.46952, y: -15.346889}
+  - {x: 41.064922, y: -16.583826}
+  - {x: 33.34242, y: -17.642159}
+  - {x: 25.35344, y: -18.476025}
+  - {x: 17.150301, y: -19.039516}
+  - {x: 6.885575, y: -19.409874}
+  - {x: -3.4740222, y: -19.531334}
+  - {x: -13.812257, y: -19.437504}
+  - {x: -24.011618, y: -19.158953}
+  - {x: -33.953735, y: -18.724411}
+  - {x: -43.519604, y: -18.162392}
+  - {x: -52.58982, y: -17.502562}
+  - {x: -61.044952, y: -16.77687}
+  - {x: -68.76569, y: -16.019987}
+  - {x: -75.633064, y: -15.269197}
+  - {x: -81.52843, y: -14.563845}
+  - {x: -86.33336, y: -13.944525}
+  - {x: -89.92939, y: -13.452286}
+  - {x: -92.19562, y: -13.128189}
+  - {x: -92.87174, y: -13.02195}
 --- !u!1971053207 &94965966
 SpriteShapeRenderer:
   m_ObjectHideFlags: 0
@@ -813,6 +1033,7 @@ SpriteShapeRenderer:
   m_LocalAABB:
     m_Center: {x: -1.0848999, y: -4.8558044, z: 0}
     m_Extent: {x: 96.82353, y: 14.839136, z: 0}
+  m_SpriteSortPoint: 0
 --- !u!4 &94965967
 Transform:
   m_ObjectHideFlags: 0
@@ -1101,6 +1322,25 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1523,6 +1763,12 @@ Rigidbody2D:
   m_AngularDrag: 6
   m_GravityScale: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -1556,6 +1802,25 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1572,6 +1837,25 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -2124,6 +2408,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -2153,6 +2438,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     startSize:
@@ -2474,6 +2760,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 1000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -3203,6 +3490,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -3232,6 +3520,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   UVModule:
@@ -5452,6 +5741,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -5481,6 +5771,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
@@ -5858,6 +6149,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -5900,6 +6192,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -5929,6 +6222,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     widthOverTrail:
@@ -6016,6 +6310,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -6045,6 +6340,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   CustomDataModule:
@@ -6083,6 +6379,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -6112,6 +6409,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     colorLabel0: Color
@@ -6365,6 +6663,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -6394,6 +6693,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     colorLabel1: Color
@@ -6738,9 +7038,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -6775,7 +7083,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.3377285, y: 3.61, z: -10}
+  m_LocalPosition: {x: -0.9792595, y: 3.61, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7223,6 +7531,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -7252,6 +7561,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     startSize:
@@ -7573,6 +7883,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 1000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -8302,6 +8613,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -8331,6 +8643,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   UVModule:
@@ -10551,6 +10864,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -10580,6 +10894,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
@@ -10957,6 +11272,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -10999,6 +11315,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -11028,6 +11345,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     widthOverTrail:
@@ -11115,6 +11433,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -11144,6 +11463,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   CustomDataModule:
@@ -11182,6 +11502,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -11211,6 +11532,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     colorLabel0: Color
@@ -11464,6 +11786,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -11493,6 +11816,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     colorLabel1: Color
@@ -13010,6 +13334,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -13039,6 +13364,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     startSize:
@@ -13360,6 +13686,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 1000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -14089,6 +14416,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -14118,6 +14446,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   UVModule:
@@ -16338,6 +16667,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -16367,6 +16697,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
@@ -16744,6 +17075,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -16786,6 +17118,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -16815,6 +17148,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     widthOverTrail:
@@ -16902,6 +17236,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -16931,6 +17266,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   CustomDataModule:
@@ -16969,6 +17305,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -16998,6 +17335,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     colorLabel0: Color
@@ -17251,6 +17589,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -17280,6 +17619,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     colorLabel1: Color
@@ -18133,7 +18473,8 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.6051437, y: 1}
+    FocusDistance: 10
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -18150,7 +18491,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074260198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.3377285, y: 3.61, z: -10}
+  m_LocalPosition: {x: -0.9792595, y: 3.61, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
